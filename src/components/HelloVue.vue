@@ -1,11 +1,17 @@
 <script setup>
+import { ref } from 'vue';
 
+const message = ref('')
 </script>
 
 <template>
-  <h3>Hello Vue3!!</h3>
+  <input type="text" v-model="message" />
+  <h3>Hello,{{ message }}!!</h3>
+  
 </template>
 
 <style scoped>
-
+ h3{
+  color:blue
+ }
 </style>
